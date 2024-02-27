@@ -1,0 +1,97 @@
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 230px;
+	transform: translateX(-100%);
+	transition: all 0.3s;
+	background-color: #fff;
+}
+.sidebar__show {
+	transform: translateX(0);
+}
+.logo__wrapper {
+	background-color: #ececec;
+	padding: 20px;
+}
+.logo__text {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+.logo__highlight {
+	color: #7ccf2e;
+}
+.address__title {
+	color: #697783;
+	font-size: 14px;
+	font-weight: 600;
+}
+.address {
+	color: #3d4650;
+	font-size: 18px;
+}
+.menu {
+	margin-top: 20px;
+}
+.menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.menu__item__link {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
+	padding: 10px 20px;
+}
+.menu__text {
+	color: #586875;
+	font-size: 18px;
+}
+.active__menu {
+	background-color: #ebeef7;
+}
+.active__menu .menu__text {
+	color: #5162b9;
+}
+.active__menu svg {
+	fill: #5162b9;
+}
+.logout__btn__wrapper{
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	padding: 0 20px;
+}
+.logout__btn{
+	background: none;
+	border: 1px solid #A9B2B9;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #586875;
+	width: 100%;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: calc(100% - 230px);
+	background-color: #1e272e4c;
+	height: 100vh;
+	transition: 0.3s;
+	transform: translateX(100%);
+}
+.overlay__show {
+	transform: translateX(0);
+}
+@media only screen and (min-width: 768px) {
+	.wrapper {
+		width: 320px;
+	}
+	.overlay{
+		width: calc(100% - 320px);
+	}
+}

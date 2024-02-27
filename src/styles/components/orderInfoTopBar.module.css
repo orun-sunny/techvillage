@@ -1,0 +1,11 @@
+.wrapper{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1200px){
+    .wrapper{
+        flex-wrap: nowrap;
+    }
+}
