@@ -74,7 +74,7 @@ function POS() {
   };
   return (
     <section>
-      <div className="container">
+      <div className="">
         <div className={style.wrapper}>
           <div className={style.items__cart__wrapper}>
             <OrderInfoTopBar />

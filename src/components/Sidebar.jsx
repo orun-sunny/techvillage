@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import CashIcon from "../assets/icons/CashIcon";
 import CloseIcon from "../assets/icons/CloseIcon";
 import DashboardIcon from "../assets/icons/DashboardIcon";
-import LocationIcon from "../assets/icons/LocationIcon";
+
 import SettingIcon from "../assets/icons/SettingIcon";
 import { Context } from "../context/store";
 import style from "../styles/components/sidebar.module.css";
@@ -15,11 +15,11 @@ function Sidebar() {
       path: "/dashboard",
       icon: <DashboardIcon color="#586875" />,
     },
-    {
-      name: "Locations",
-      path: "/locations",
-      icon: <LocationIcon color="#586875" />,
-    },
+    // {
+    //   name: "Locations",
+    //   path: "/locations",
+    //   icon: <LocationIcon color="#586875" />,
+    // },
     {
       name: "POS Invoices",
       path: "/invoice",
@@ -41,12 +41,11 @@ function Sidebar() {
         <div className={style.logo__wrapper}>
           <h2 className={style.logo__text}>
             <Link to="/" style={{ color: "black" }}>
-              go<span className={style.logo__highlight}>B</span>
-              illing
+              Tech<span className={style.logo__highlight}>Village</span>
             </Link>
           </h2>
-          <p className={style.address__title}>Location:</p>
-          <p className={style.address}>Los Angeles, California</p>
+          <p className={style.address__title}>Owner</p>
+          <p className={style.address}>orun-sunny</p>
         </div>
         <ul className={style.menu}>
           {navigationMenus.map(({ name, icon, path }) => (
